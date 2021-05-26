@@ -21,7 +21,7 @@ Problem with *webpack 5* and *webpack-dev-server 4* basic hot reloading: the ent
 
 ### Code
 
-Repository link: https://github.com/FlavioMH/webpackDevServer4HRM
+Repository link: https://github.com/FlavioMH/webpackDevServer4HMR
 
 Repository has been created starting from a bigger project, so you can find out some webpack settings or package.json entries not used in this sample. What it is important to know is that the project actually (tries to) work on:
 - react
@@ -39,11 +39,11 @@ Before to update to webpack v5, I was using webpack v4 with webpack-dev-server v
 ### Actual Behavior
 
 Once I save the file, never mind about what change I am doing, browser immediately shows tabl loading spinner and the enite page is refreshed.
-This happens even if HRM seems to be activated.
+This happens even if HMR seems to be activated.
 
 ### How can we reproduce the behavior?
 
-1. Clone the repository [FlavioMH/webpackDevServer4HRM](https://github.com/FlavioMH/webpackDevServer4HRM)
+1. Clone the repository [FlavioMH/webpackDevServer4HMR](https://github.com/FlavioMH/webpackDevServer4HMR)
 2. `npm install`
 3. `npm run app`
 4. Try to change "Try to change this label and everything will refresh..." sentence into `testApplication.tsx` file 
