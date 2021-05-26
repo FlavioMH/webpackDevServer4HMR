@@ -1,4 +1,4 @@
-# webpackDevServer4HRM
+# webpackDevServer4HMR
 Problem with *webpack 5* and *webpack-dev-server 4* basic hot reloading: the entire page is refreshed!
 
 ## Issues
