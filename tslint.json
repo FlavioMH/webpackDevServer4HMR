@@ -1,0 +1,170 @@
+{
+  "extends": [
+    "tslint:latest",
+    "tslint-react"
+  ],
+  "rules": {
+    "jsx-alignment": true, // Enforces a consistent style for multiline JSX elements
+    "jsx-boolean-value": [
+      "always"
+    ],
+    "jsx-curly-spacing": true, // Requires or bans spaces between curly brace characters in JSX.
+    "jsx-equals-spacing": true, // Requires or bans spaces before and after the = token in JSX element attributes.
+    "jsx-key": true, // Warns for missing key props in JSX element array literals 
+    "jsx-no-bind": true, // Forbids function binding in JSX attributes
+    "jsx-no-lambda": true,
+    "jsx-no-multiline-js": false,
+    "jsx-self-close": true, // Enforces that JSX elements with no children are self-closing.
+    "jsx-no-string-ref": true, // Passing strings to the ref prop of React elements is considered a legacy feature and will soon be deprecated. 
+    "jsx-space-before-trailing-slash": true, // Checks that self-closing JSX elements have a space before the '/>' part.
+    "jsx-wrap-multiline": true, // Enforces that multiline JSX expressions are wrapped with parentheses.
+    "import-blacklist": [
+      true,
+      "rxjs"
+    ],
+    "interface-over-type-literal": false,
+    "max-classes-per-file": true,
+    "max-line-length": [
+      true,
+      140
+    ],
+    "member-access": false,
+    "member-ordering": [
+      true,
+      {
+        "order": "fields-first"
+      }
+    ],
+    "newline-before-return": true,
+    "no-inferrable-types": [
+      true,
+      "ignore-params",
+      "ignore-properties"
+    ],
+    "no-import-side-effect": [
+      true
+    ],
+    "no-invalid-this": [
+      true,
+      "check-function-in-method"
+    ],
+    "no-null-keyword": false,
+    "no-require-imports": false,
+    "no-switch-case-fall-through": true,
+    "object-literal-shorthand": true,
+    "only-arrow-functions": [
+      false,
+      "allow-declarations"
+    ],
+    "semicolon": [
+      true,
+      "always",
+      "ignore-interfaces"
+    ],
+    "triple-equals": [
+      true,
+      "allow-null-check"
+    ],
+    "typedef": [
+      true,
+      "parameter",
+      "property-declaration"
+    ],
+    "variable-name": [
+      true,
+      "ban-keywords",
+      "check-format",
+      "allow-pascal-case",
+      "allow-leading-underscore"
+    ],
+    "no-consecutive-blank-lines": true,
+    "array-type": [
+      true,
+      "array-simple"
+    ],
+    "arrow-parens": false,
+    "arrow-return-shorthand": true,
+    "no-any": false,
+    "no-implicit-dependencies": [
+      false
+    ],
+    "no-var-requires": false,
+    "no-submodule-imports": false,
+    "object-literal-sort-keys": true,
+    "one-variable-per-declaration": [
+      false
+    ],
+    "prefer-method-signature": false,
+    "react-hooks/rules-of-hooks": "error",
+    "no-var-keyword": true,
+    "no-unused-variable": [
+      true,
+      "react",
+      {
+        "ignore-pattern": "^_"
+      }
+    ],
+    "ordered-imports": [
+      true,
+      {
+        "import-sources-order": "lowercase-last",
+        "named-imports-order": "lowercase-first"
+      }
+    ],
+    "trailing-comma": [
+      true,
+      {
+        "multiline": "always",
+        "singleline": "never"
+      }
+    ],
+    "class-name": true,
+    "comment-format": [
+      true,
+      "check-space"
+    ],
+    "indent": [
+      true,
+      "spaces"
+    ],
+    "no-eval": true,
+    "no-internal-module": true,
+    "no-trailing-whitespace": true,
+    "no-unsafe-finally": true,
+    "one-line": [
+      true,
+      "check-open-brace",
+      "check-whitespace"
+    ],
+    "quotemark": [
+      true,
+      "single",
+      "jsx-double"
+    ],
+    "typedef-whitespace": [
+      true,
+      {
+        "call-signature": "nospace",
+        "index-signature": "nospace",
+        "parameter": "nospace",
+        "property-declaration": "nospace",
+        "variable-declaration": "nospace"
+      }
+    ],
+    "whitespace": [
+      true,
+      "check-branch",
+      "check-decl",
+      "check-operator",
+      "check-separator",
+      "check-type"
+    ]
+  },
+  "jsRules": {
+    "triple-equals": [
+      true,
+      "allow-null-check"
+    ]
+  },
+  "defaultSeverity": "warning"
+}
