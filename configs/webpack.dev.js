@@ -31,7 +31,7 @@ module.exports = (env = {}) => {
         },
 
         plugins: [
-            // new webpack.HotModuleReplacementPlugin(),
+            new webpack.HotModuleReplacementPlugin(),
             new ReactRefreshWebpackPlugin({
                 overlay: false,
             }),

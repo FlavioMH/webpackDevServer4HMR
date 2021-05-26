@@ -48,10 +48,9 @@ module.exports = (env = {}) => {
                         {
                             loader: 'babel-loader',
                             options: {
-                                caller: 'web',
                                 babelrc: false,
                                 presets: [
-                                    ['@babel/preset-env', { targets: { browsers: 'last 2 versions' } }],
+                                    ['@babel/preset-env'],
                                     ['@babel/preset-react', { development: env.mode == 'development'} ],
                                     '@babel/preset-typescript',
                                 ],
@@ -144,31 +143,7 @@ module.exports = (env = {}) => {
                 },
             ],
         },
-        optimization: {
-            runtimeChunk: {
-                name: 'manifest',
-            },
-            splitChunks: {
-                cacheGroups: {
-                    default: false,
-                    vendor: {
-                        test(module) {
-                            // Only node_modules are needed
-                            if (!module.context || !module.context.includes('node_modules')) {
-                                return false;
-                            }
-                            return true;
-                        },
-                        name: 'vendor',
-                        chunks: 'all',
-                    }
-                },
-            },
-        },
         plugins: [
-            new webpack.ProvidePlugin({
-                Configuration: 'configuration'
-            }),
             // new ForkTsCheckerWebpackPlugin({
             //     typescript: {
             //       diagnosticOptions: {
